@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purple Theme</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH2N2bK2YzH2M+VZyoXYKQ+H9l6nTQjH9RtTzF5i6Z5FzFq2ZsMXdxlhO/NQvl2xA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #1e0030, #2d004d);
+      min-height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 2.5rem;
+      text-shadow: 0 0 10px #fff, 0 0 20px #aaa;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+    .button {
+      background: #7b3eff;
+      color: white;
+      padding: 0.9rem 1.8rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .button:hover {
+      background: #9b5dff;
+      transform: translateY(-2px);
+    }
+    .discord-button {
+      background: #5865F2;
+      margin-top: 1rem;
+    }
+    .discord-button:hover {
+      background: #4752c4;
+    }
+  </style>
+</head>
+<body>
+  <h1>PURPLE THEME</h1>
+  <div class="buttons">
+    <a class="button" href="javascript:(function(){const style=document.createElement('style');style.innerHTML=\`body,html{background:linear-gradient(135deg,#0a0012,#2b0045,#0f0018,#1f0030);background-size:600% 600%;animation:galaxyFlow 25s ease infinite;font-family:'Courier New',monospace!important;color:#fff!important}@keyframes galaxyFlow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}*{transition:none!important;text-shadow:0 0 6px #fffaa,0 0 12px...
+      ><i class="fas fa-desktop"></i> Arrastar (PC)</a>
+    <button class="button" onclick="copyBookmarklet()"><i class="fas fa-mobile-alt"></i> Bookmarklet (Celular)</button>
+  </div>
+  <a class="button discord-button" href="https://discord.gg/platformdestroyer" target="_blank">
+    <i class="fab fa-discord"></i> Servidor
+  </a>
+
+  <script>
+    function copyBookmarklet() {
+      const code = `(function(){const style=document.createElement('style');style.innerHTML=\`body,html{background:linear-gradient(135deg,#0a0012,#2b0045,#0f0018,#1f0030);background-size:600% 600%;animation:galaxyFlow 25s ease infinite;font-family:'Courier New',monospace!important;color:#fff!important}@keyframes galaxyFlow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}*{transition:none!important;text-shadow:0 0 6px #fffaa,0 0 12px #fff44}header,na...
+      navigator.clipboard.writeText(code).then(() => {
+        alert("Bookmarklet copiado com sucesso!");
+      });
+    }
+  </script>
+</body>
+</html>
